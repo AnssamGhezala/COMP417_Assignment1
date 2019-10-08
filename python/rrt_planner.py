@@ -240,7 +240,12 @@ if __name__ == "__main__":
     rrt = RRTPlanner(world)
 
     start_state = State(10, 10, None)
-    dest_state = State(500, 500, None)
+    
+    # 400, 300
+    # 250, 500
+    # 250, 250
+    # 500, 500
+    dest_state = State(300, 600, None)
 
     max_num_steps = 1000     # max number of nodes to be added to the tree 
     max_steering_radius = 30 # pixels

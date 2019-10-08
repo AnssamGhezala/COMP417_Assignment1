@@ -194,7 +194,13 @@ if __name__ == "__main__":
 
     # TODO: Change the goal state to 3 different values, saving and running between each
     # in order to produce your images to submit
-    dest_state = State(500, 500)
+   
+    # 400, 300
+    # 250, 500
+    # 250, 250
+    # 500, 500
+    # 600, 350
+    dest_state = State(300, 600)
     
     plan = astar.plan(start_state, dest_state)
     draw_plan(world, plan)
